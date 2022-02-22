@@ -1,17 +1,61 @@
 {% extends "layout.html" %}
 
 {% block headIcons %}
-  <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{ asset_path }}images/tpr.gov.uk.ico?0.18.3" type="image/x-icon" />
 {% endblock %}
 
 {% block head %}
   <!--[if lte IE 8]><link href="/public/stylesheets/unbranded-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
-  <!--[if gt IE 8]><!--><link href="/public/stylesheets/tpr.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link href="/public/stylesheets/tpr-des-sys.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/tpr-main.css" media="all" rel="stylesheet" type="text/css" />
+  <!--<![endif]-->
 
   {% for stylesheetUrl in extensionConfig.stylesheets %}
     <link href="{{ stylesheetUrl }}" rel="stylesheet" type="text/css" />
   {% endfor %}
 {% endblock %}
 
-{% block header %}{% endblock %}
+{% block header %}
+<!-- START Phase Banner --> 
+  <header>
+    <div class="layout_docWidth__3059x beta_beta__2i-o_"> {# // display: flex; width: 100%; position: relative; justify-content: center // BKGD color = white #}
+      <div class="layout_appWidth__38eTX"> {# width: 100%; max-width: 1170px #}
+        <div class="globals_flex__3XB_K globals_alignItems-center__25sEa"> {# // display: flex // align-items: center #}
+          <p
+            class="typography_p__1WhbC globals_color-white__20apa globals_bg-primary-3__13NFP globals_p-1__Z-NT3 globals_my-2__3k7zw globals_mr-3__unUVF"> {# // font-family: Open Sans, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: 1.1em // color: #fff !important // background: #006ebc // padding: 5px !important // margin-top: 10px !important; margin-bottom: 10px !important // margin-right: 15px !important #}
+            BETA</p>
+          <p class="typography_p__1WhbC globals_color-neutral-8__1_Tdw">This is a new service
+            - your feedback will help us improve it.</p> {# // font-family: Open Sans, sans-serif; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: 1.5em // color: #3d3d3d !important #}
+        </div>
+      </div>
+    </div>
+<!-- END Phase Banner -->
+
+<!-- START Header MAIN -->
+    <div class="container">
+      <div id="header-wrapper">
+        <div id="logo-nav-bar">
+          <div id="logo-area">
+            <div class="logo-search">
+              <div class="logo-search-bar">
+                <div class="logo">
+                  <a href="/" id="logo" title="The Pensions Regulator">
+                    <img src="https://www.thepensionsregulator.gov.uk/-/media/thepensionsregulator/images/logo/tpr-logo-header.ashx" alt="The Pensions Regulator logo" width="200" height="72" id="desktoplogo">
+                    <!-- <img src="https://www.thepensionsregulator.gov.uk/-/media/thepensionsregulator/images/logo/tpr-logo-footer.ashx" alt="The Pensions Regulator (TPR) logo footer" width="200" height="72" id="printlogo" style="display: none;">-->
+                  </a>
+                </div>
+
+                <div class="strapline">Design System</div>
+            
+              <div class="search"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- END Header Main -->
+  
+{% endblock %}
 {% block footer %}{% endblock %}

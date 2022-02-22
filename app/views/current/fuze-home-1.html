@@ -1,0 +1,99 @@
+{% set pageDescription = "Create and build digital content,
+products, and services for TPR with a focus on usability and meaning." %}
+{% set pageLayout = "Homepage" %}
+
+{% extends "layout_tpr.html" %}
+
+{% block breadcrumb %}{% endblock %} {# DO WE NEED THIS??? #}
+
+{% block outerBody %}
+
+<main id="maincontent" role="main">
+
+  <section class="tpr-hero">
+    <div class="tpr-width-container tpr-hero--border app-width-container">
+      <div class="tpr-grid-row">
+        <div class="tpr-grid-column-two-thirds">
+          <div class="tpr-hero__wrapper app-hero__wrapper">
+            <h1 class="tpr-u-margin-bottom-4">Design and build digital services for the NHS</h1>
+            <p class="tpr-body-l tpr-u-margin-bottom-1">Use the service manual to build consistent, usable services that put people first.​ Learn from the research and experience of other NHS teams.</p>
+          </div>
+        </div>
+        <div class="tpr-grid-column-one-third app-latest-update">
+          <div class="tpr-card app-card--transparent tpr-u-margin-bottom-0 tpr-u-margin-top-0">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/whats-new">What's new</a></h2>
+              <p class="tpr-card__description">In February 2022 we removed the beta banner from the <a href="/service-standard/index">NHS service standard</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tpr-section">
+    <div class="tpr-width-container app-width-container">
+      <ul class="tpr-grid-row tpr-card-group">
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/service-standard">NHS service standard</a></h2>
+              <p class="tpr-card__description">Check you're working to best practice from the start</p>
+            </div>
+          </div>
+        </li>
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/design-system">Design system</a></h2>
+              <p class="tpr-card__description">Build consistent, accessible user interfaces</p>
+            </div>
+          </div>
+        </li>
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/content">Content style guide</a></h2>
+              <p class="tpr-card__description">How to write for digital NHS services</p>
+            </div>
+          </div>
+        </li>
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/accessibility">Accessibility</a></h2>
+              <p class="tpr-card__description">Make NHS services accessible for everyone</p>
+            </div>
+          </div>
+        </li>
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/design-system/design-principles">Design principles</a></h2>
+              <p class="tpr-card__description">These principles guide all of our design</p>
+            </div>
+          </div>
+        </li>
+        <li class="tpr-grid-column-one-third tpr-card-group__item">
+          <div class="tpr-card tpr-card--clickable">
+            <div class="tpr-card__content">
+              <h2 class="tpr-card__heading tpr-heading-m"><a href="/community-and-contribution">Community and contribution</a></h2>
+              <p class="tpr-card__description">Help grow and improve the service manual</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <hr class="tpr-u-margin-top-2 tpr-u-margin-bottom-6">
+      <div class="tpr-grid-row">
+        <div class="tpr-grid-column-two-thirds">
+
+          <h2>Feedback</h2>
+          <p>Let us know about your visit to the service manual today by filling in <a href="https://feedback.digital.nhs.uk/jfe/form/SV_9GIQAEkm6gfFCWp">our survey on the Qualtrics website</a>.</p>
+          <h2>Support</h2>
+          <p>The manual is maintained by the <a href="/service-manual-team">service manual team at NHS Digital</a>. If you've got a question or want to feedback, you can <a href="/get-in-touch">get in touch</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
