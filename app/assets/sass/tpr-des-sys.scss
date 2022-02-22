@@ -138,6 +138,10 @@ html {
       padding-bottom: 20px;
       color: #fff
     }
+
+    .logo .strapline {
+      float: left;
+    }
   
     @media (min-width:768px) {
       header .logo-search-bar .logo-search .logo {
@@ -167,6 +171,13 @@ html {
    /* header .logo-search-bar .logo-search .logo .strapline {
       display: none
   } */
+
+  .strapline {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.555;
+  }
   
   header .logo-search-bar .logo-search .mobile-menu-toggle {
       display: none;
@@ -252,7 +263,7 @@ html {
   
   @media (min-width:1200px) {
       .container {
-          max-width: 1140px
+          max-width: 1170px
       }
   }
   
