@@ -10,6 +10,21 @@
 // Override the default GOV.UK Frontend font stack
 $govuk-font-family: "Open Sans", sans-serif;
 
+// Override the GOV.UK font colours
+$govuk-text-colour: #3d3d3d;
+$govuk-secondary-text-colour: #585858;
+$govuk-link-colour: #006ebc;
+$govuk-link-hover-colour: #557b97;
+$govuk-link-visited-colour: #483b8b;
+$govuk-link-active-colour: #006ebc;
+$govuk-border-colour: #cacaca;
+$govuk-input-border-colour: #3d3d3d;
+$govuk-focus-colour: #fed100;
+$govuk-focus-text-colour: #3d3d3d;
+$govuk-error-colour: #a91717;
+$govuk-success-colour: #1e7e34;
+$govuk-brand-colour: #483b8b;
+
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
@@ -153,7 +168,11 @@ html {
       padding-left: 30px;
       width: 500px;
     }
-
+    .govuk-tag {
+      background-color: #006ebc;
+      padding: 10px;
+    }
+    
     p #phase-text {
       color: #3d3d3d !important;
       font-family: Open Sans, sans-serif;
