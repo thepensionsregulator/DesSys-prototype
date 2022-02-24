@@ -139,8 +139,30 @@ html {
       color: #fff
     }
 
-    .logo .strapline {
-      float: left;
+    .logo, .strapline {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .logo {
+      border-right: solid 2px #7469ba;
+      width: 255px;
+    }
+
+    .strapline {
+      padding-left: 30px;
+      width: 500px;
+    }
+
+    p #phase-text {
+      color: #3d3d3d !important;
+      font-family: Open Sans, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 1.5em
+      margin-bottom: 0 !important;
+      vertical-alignment: middle;
     }
   
     @media (min-width:768px) {
