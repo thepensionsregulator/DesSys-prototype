@@ -11,24 +11,42 @@
 // Override the default GOV.UK Frontend font stack
 $govuk-font-family: "Open Sans", sans-serif;
 
-// Override the GOV.UK font colours
-$govuk-text-colour: #3d3d3d;
-$govuk-secondary-text-colour: #585858;
-$govuk-link-colour: #006ebc;
-$govuk-link-hover-colour: #557b97;
-$govuk-link-visited-colour: #483b8b;
-$govuk-link-active-colour: #006ebc;
-$govuk-border-colour: #cacaca;
-$govuk-input-border-colour: #3d3d3d;
-$govuk-focus-colour: #fed100;
-$govuk-focus-text-colour: #3d3d3d;
-$govuk-error-colour: #a91717;
-$govuk-success-colour: #1e7e34;
-$govuk-brand-colour: #483b8b;
+// ----- Override the GOV.UK font colours ----- //
+// TPR Colours
+$tpr-text-colour: #3d3d3d; // Eclipse
+$tpr-secondary-text-colour: #585858; // Zambezi
+$tpr-link-colour: #006ebc; // Royal Blue
+$tpr-link-hover-colour: #557b97; // Kashmir Blue
+$tpr-link-visited-colour: #483b8b; // TPR Violet
+$tpr-link-active-colour: #006ebc; // Royal Blue — Needs updating to include SCP links that are Eclipse
+$tpr-border-colour: #cacaca; // Very Light Grey
+$tpr-input-border-colour: #3d3d3d; // Eclipse
+$tpr-focus-colour: #fed100; // Tangerine Yellow
+$tpr-focus-text-colour: #3d3d3d; // Eclipse
+$tpr-error-colour: #a91717; //Fire Brick
+$tpr-error-hover-colour: #cd2e25; // Brick — No GOV.UK equivalent
+$tpr-success-colour: #1e7e34; // Camarone
+$tpr-brand-colour: #483b8b; // TPR Violet
+$tpr-royal-blue-bkgd-colour: #006ebc; // Royal Blue
+
+// GOV.UK Overrides
+$govuk-text-colour: $tpr-text-colour;
+$govuk-secondary-text-colour: $tpr-secondary-text-colour;
+$govuk-link-colour: $tpr-link-colour;
+$govuk-link-hover-colour: $tpr-link-hover-colour;
+$govuk-link-visited-colour: $tpr-link-visited-colour;
+$govuk-link-active-colour: $tpr-link-active-colour;
+$govuk-border-colour: $tpr-border-colour;
+$govuk-input-border-colour: $tpr-input-border-colour;
+$govuk-focus-colour: $tpr-focus-colour;
+$govuk-focus-text-colour: $tpr-focus-text-colour;
+$govuk-error-colour: $tpr-error-colour;
+$govuk-success-colour: $tpr-success-colour;
+$govuk-brand-colour: $tpr-brand-colour;
 
 // Override GOV.UK Phase Banner and Header styles
-.govuk-tag {
-  background-color: #006ebc;
+.govuk-tag, .govuk-phase-banner__content__tag {
+  background-color: $tpr-royal-blue-bkgd-colour;
   padding: 10px;
 }
 
@@ -41,6 +59,9 @@ border-bottom: 0;
     padding-top: 0;
     border-bottom: 0;
 }
+
+$govuk-header-border-width: 0;
+$govuk-header-border-color: #E9E7F1;
 
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
