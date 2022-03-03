@@ -28,6 +28,10 @@ $tpr-error-hover-colour: #cd2e25; // Brick — No GOV.UK equivalent
 $tpr-success-colour: #1e7e34; // Camarone
 $tpr-brand-colour: #483b8b; // TPR Violet
 $tpr-royal-blue-bkgd-colour: #006ebc; // Royal Blue
+$tpr-brand-tint-80-colour: #685CA1; // Scampi
+$tpr-print-text-colour: #000000; // Black
+$tpr-white-colour: #ffffff; // White
+
 
 // GOV.UK Overrides
 $govuk-text-colour: $tpr-text-colour;
@@ -56,9 +60,14 @@ border-bottom: 0 !important;
 
 .govuk-header__container {
   background-color: $tpr-brand-colour;
+  height: 100.4px !important;
   margin-bottom: 0 !important;
   padding-top: 0 !important;
-  // border-bottom: 0 !important;
+  border-bottom: 0 !important;
+}
+
+#header-wrapper.layout_appWidth__38eTX {
+  padding: 12px 20px 10px 20px !important;
 }
 
 $govuk-header-border-width: 0;
@@ -66,6 +75,29 @@ $govuk-header-border-color: #E9E7F1;
 
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
+
+// Override NHS styling
+.tpr-hero {
+
+}
+
+.tpr-width-container {
+
+}
+
+.tpr-hero--border {
+
+}
+
+.tpr-hero__wrapper {
+
+}
+
+.tpr-u-margin-bottom-1 {
+
+}
+
+
 
 @import "application";
 
