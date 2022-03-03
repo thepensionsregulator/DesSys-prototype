@@ -45,19 +45,20 @@ $govuk-success-colour: $tpr-success-colour;
 $govuk-brand-colour: $tpr-brand-colour;
 
 // Override GOV.UK Phase Banner and Header styles
-.govuk-tag, .govuk-phase-banner__content__tag {
+.govuk-tag.govuk-phase-banner__content__tag {
   background-color: $tpr-royal-blue-bkgd-colour;
   padding: 10px;
 }
 
-.govuk-phase-banner {
-border-bottom: 0;
+.layout_appWidth__38eTX .govuk-phase-banner {
+border-bottom: 0 !important;
 }
 
 .govuk-header__container {
-    margin-bottom: 0;
-    padding-top: 0;
-    border-bottom: 0;
+  background-color: $tpr-brand-colour;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  // border-bottom: 0 !important;
 }
 
 $govuk-header-border-width: 0;
