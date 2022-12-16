@@ -13,7 +13,7 @@
 .tpr-hero {
   @include print-color($tpr-print-text-colour);
 
-  background-color: $$tpr-brand-tint-80-colour;
+  background-color: $tpr-brand-tint-80-colour;
   color: $tpr-white-colour;
   position: relative; /* [1] */
 
