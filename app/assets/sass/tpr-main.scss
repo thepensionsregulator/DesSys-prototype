@@ -80,12 +80,35 @@ $govuk-header-border-color: #E9E7F1;
 // Override the canvas background colour, which is normally grey to blend with the GOV.UK footer.
 $govuk-canvas-background-colour: $govuk-body-background-colour;
 
+
+// Override GOV.UK max width
+.govuk-width-container {
+  max-width: 1110px !important;
+}
+
 // Override NHS styling
 .tpr-hero {
+  @include print-color($tpr-print-text-color);
 
+  background-color: $tpr-brand-tint-80-colour;
+  color: $tpr-white-colour;
+  position: relative; /* [1] */
+
+ /*  .tpr-hero--border { /* [2] */
+    /* border-top: $nhsuk-hero-border solid $nhsuk-secondary-border-color; */
+  }
+}
+
+.govuk-width-container {
+  max-width: 1170px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 100px;
 }
 
 .tpr-width-container {
+  margin: 0 auto;
+  max-width: 1110px;
 
 }
 
